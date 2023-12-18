@@ -1,5 +1,9 @@
 document.getElementById("Withdraw-btn").addEventListener("click", function () {
    const withdrawInputElement = depositInputField("withdraw-input");
+   if (withdrawInputElement < 0) {
+      alert("please input positive value");
+      return;
+   }
    const withdrawTextElement = depositTextField("withdraw-text");
 
    if (isNaN(withdrawInputElement)) {

@@ -1,9 +1,10 @@
+
+
 function depositInputField(deposit) {
    const depositInputText = document.getElementById(deposit);
    const depositInputTextString = depositInputText.value;
    const newDepositInputText = parseFloat(depositInputTextString);
    depositInputText.value = "";
-
    return newDepositInputText;
 }
 
